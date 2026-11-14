@@ -59,9 +59,11 @@
       "versions": [
         {
           "version": "1.1.1",
-          "publishTimestamp": 1794632900,
+          "publishTimestamp": 1794636145,
           "source": {
-            "type": "npm"
+            "type": "git",
+            "url": "https://github.com/tingjhdhjsqjjsnshh152074-afk/dsh-message-queue",
+            "commit": "e65a84387b72ef1caf29952fa828091b73d4b9ab"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.5 <0.4.0"
