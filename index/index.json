@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-message-queue",
+    "zh": "定时消息队列"
+  },
+  "description": {
+    "en": "Per-conversation scheduled message queue for DeepSeek Harness.",
+    "zh": "每个对话独立的消息队列：指定时间、本轮完成后或完成后间隔发送，严格串行，支持循环。"
+  },
+  "metadata": {
+    "categories": {
+      "productivity": {
+        "title": {
+          "en": "Productivity",
+          "zh": "效率"
+        }
+      },
+      "automation": {
+        "title": {
+          "en": "Automation",
+          "zh": "自动化"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-message-queue",
+      "title": {
+        "en": "Message queue",
+        "zh": "定时消息队列"
+      },
+      "description": {
+        "en": "Send a queued message at a chosen time, right after the current turn, or a delay later — strictly in order, with repeat counts.",
+        "zh": "把消息排进队列，指定时间或等本轮跑完再发出；同一对话严格串行，可设重复轮数。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1lc3NhZ2UgcXVldWUiPgogIDxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI1NiIgaGVpZ2h0PSI1NiIgcng9IjE0IiBmaWxsPSIjMmY2ZjVlIi8+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjVmMmVhIiBzdHJva2Utd2lkdGg9IjMuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik0yMCAyMi41aDEzIi8+CiAgICA8cGF0aCBkPSJNMjAgMzEuNWg5Ii8+CiAgICA8cGF0aCBkPSJNMjAgNDAuNWg3Ii8+CiAgICA8Y2lyY2xlIGN4PSI0My41IiBjeT0iMzciIHI9IjkiLz4KICAgIDxwYXRoIGQ9Ik00My41IDMxLjh2NS42bDMuOSAyLjQiLz4KICA8L2c+Cjwvc3ZnPgo=",
+      "author": "tingjhdhjsqjjsnshh152074-afk",
+      "homepage": "https://github.com/tingjhdhjsqjjsnshh152074-afk/dsh-message-queue",
+      "repository": {
+        "url": "https://github.com/tingjhdhjsqjjsnshh152074-afk/dsh-message-queue"
+      },
+      "metadata": {
+        "category": "automation",
+        "keywords": [
+          "queue",
+          "schedule",
+          "message",
+          "timer",
+          "队列",
+          "定时"
+        ],
+        "sortKeys": {}
+      },
+      "dist-tags": {
+        "latest": "1.1.0"
+      },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794632314,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5 <0.4.0"
+          }
+        }
+      ]
+    }
+  ]
+}
