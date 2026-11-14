@@ -1,6 +1,6 @@
 {
   "name": "dsh-message-queue",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Per-conversation scheduled message queue for DeepSeek Harness: send a message at a time, after the current turn, or a delay later — strictly in order, with repeat counts.",
   "type": "module",
   "license": "MIT",

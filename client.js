@@ -11,7 +11,12 @@ const ENDPOINT = '/plugin/message-queue'
  * @param stage - factory, apply, registered, render, mounted, or error.
  * @param note - optional detail.
  */
+const reported = new Set()
+
 function report(stage, note) {
+  // One breadcrumb per stage per page load: the host uses them to confirm the browser half mounted.
+  if (reported.has(stage)) return
+  reported.add(stage)
   try {
     void fetch(ENDPOINT, {
       method: 'POST',
