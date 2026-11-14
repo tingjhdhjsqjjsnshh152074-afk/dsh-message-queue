@@ -1,0 +1,50 @@
+{
+  "name": "dsh-message-queue",
+  "version": "1.1.0",
+  "description": "Per-conversation scheduled message queue for DeepSeek Harness: send a message at a time, after the current turn, or a delay later — strictly in order, with repeat counts.",
+  "type": "module",
+  "license": "MIT",
+  "author": "tingjhdhjsqjjsnshh152074-afk",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "queue",
+    "schedule",
+    "automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tingjhdhjsqjjsnshh152074-afk/dsh-message-queue.git"
+  },
+  "homepage": "https://github.com/tingjhdhjsqjjsnshh152074-afk/dsh-message-queue#readme",
+  "bugs": {
+    "url": "https://github.com/tingjhdhjsqjjsnshh152074-afk/dsh-message-queue/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.5 <0.4.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

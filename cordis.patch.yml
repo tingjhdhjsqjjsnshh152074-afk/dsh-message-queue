@@ -1,0 +1,3 @@
+- insert:
+    - id: message-queue
+      name: dsh-message-queue

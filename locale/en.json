@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Message queue",
+    "description": "Keeps one pending-message queue per conversation and delivers it strictly in order: at a chosen time, right after the current turn, or a delay after that turn."
+  }
+}
