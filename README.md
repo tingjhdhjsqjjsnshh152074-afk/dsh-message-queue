@@ -18,10 +18,22 @@
 
 ## 安装
 
-在市场里搜 `dsh-message-queue`，或直接：
+这个插件通过 GitHub 分发（不依赖 npm 账号）。两种装法：
+
+**① 市场索引（推荐）**
+
+在 Harness 里打开 设置 → 插件 → 发现 → 添加索引源，填入：
+
+```
+https://raw.githubusercontent.com/tingjhdhjsqjjsnshh152074-afk/dsh-message-queue/master/index/index.json
+```
+
+保存后搜「定时消息队列」即可安装。索引把版本 pin 在某个 commit 上，升版时仓库里的 `index/index.json` 会同步更新。
+
+**② 命令行直接装**
 
 ```powershell
-dsh plugin --profile <你的 profile> install dsh-message-queue
+dsh plugin --profile <你的 profile> install "github:tingjhdhjsqjjsnshh152074-afk/dsh-message-queue#<commit>"
 ```
 
 装完刷新页面（打包版里 Ctrl+R 没绑，按 F12 在 Console 里执行 `location.reload()`）。
